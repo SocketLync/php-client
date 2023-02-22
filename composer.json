@@ -14,7 +14,7 @@
     ],
     "require": {
         "guzzlehttp/guzzle": "^7.5",
-        "illuminate/broadcasting": "^10.1",
+        "illuminate/broadcasting": "^9.0|^10.1",
         "symfony/http-kernel": "^6.2"
     }
 }
