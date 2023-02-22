@@ -15,7 +15,12 @@ class SocketClient
 	public function __construct(protected array $settings)
 	{
 		$this->client = new Client([
-			'base_uri' => sprintf("%s://%s:%s/apps/%s", $this->settings['options']['scheme'], $this->settings['options']['host'], $this->settings['options']['port'], $this->settings['key']),
+			'base_uri' => sprintf("%s://%s:%s/apps/%s/",
+				$this->settings['options']['scheme'],
+				$this->settings['options']['host'],
+				$this->settings['options']['port'],
+				$this->settings['key'],
+			),
 		]);
 	}
 
