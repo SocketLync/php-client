@@ -24,7 +24,7 @@ class SocketClient
 		]);
 	}
 
-	public function authorizeChannel(string $socketId, string $channel, string $customData = null) : array
+	public function authorizeChannel(string $socketId, string $channel, ?string $customData = null) : array
 	{
 		$parameters = [
 			$socketId,
